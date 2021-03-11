@@ -42,17 +42,13 @@ module.exports = function check(str, bracketsConfig) {
     let lsign = signs[0];
     let rsign = signs[1];
     arr.shift();
-    console.log (arr+ "::::")
-    console.log (lsign,i)
     let rind = counter (arr,lsign,rsign);
-    console.log (rind+"!!!!!!))")
     if ((rind!==-1)&&((rind-1)%2)){
       arr.splice(rind, 1);
     } else {
       return false;
     }
     i--;
-    console.log (arr)
     
   }
   return true
